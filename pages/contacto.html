@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Contacto</title>
+    </head>      
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="../img/logoNegro.png" alt="Logo negro de nutricionista"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form><!-- Etiqueta para agregar un formulario -->
+                <label for="nombreapellido">Nombre y Apellido</label> <!-- Textbox de tipo texto para insertar nombre y apellido -->
+                <input type="text" id="nombreapellido" class="input-padron" required> <!--Campo obligatorio-->
+
+                <label for="correoelectronico">Correo Electrónico</label> <!-- Textbox de tipo email para insertar nombre y apellido -->
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label> <!-- Textbox de tipo telefono para insertar nombre y apellido -->
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="63" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <fieldset> <!--etiqueta fieldset para crear un campo con radio buttons-->
+                    <legend>¿Como le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">e-Mail</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+
+                    <label for="radio-whatsap"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades?</label> <!--Checkbox para recibir novedades-->
+                <input class="enviar" type="submit" value="Enviar Formulario"><!--Boton enviar-->
+            </form>   
+        </main>
+        <footer> 
+            <img src="../img/logoNegro.png" alt="Logo Julian Silva Nutricionista">
+            <p class="copyright">&copy Copyright Julian Silva Nutricionista</p>
+        </footer>
+    </html>
