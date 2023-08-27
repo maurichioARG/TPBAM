@@ -11,5 +11,5 @@ Creé ésta página como trabajo para la capacitación de promotores para BA Mul
 
 ## Créditos
 
-Ésta página fue creada por Mauricio Leal.
+Ésta página fue creada por Mauricio Leal.<br>
 Linkedin: https://www.linkedin.com/in/mauricio-gonzalo-leal-ds/
