@@ -20,18 +20,18 @@
             </div>
         </header>
         <main>
-            <form><!-- Etiqueta para agregar un formulario -->
+            <form action=""><!-- Etiqueta para agregar un formulario -->
                 <label for="nombreapellido">Nombre y Apellido</label> <!-- Textbox de tipo texto para insertar nombre y apellido -->
-                <input type="text" id="nombreapellido" class="input-padron" required> <!--Campo obligatorio-->
+                <input type="text" name="nombreapellido" id="nombreapellido" class="input-padron" required placeholder="Ingrese nombre y apellido"> <!--Campo obligatorio-->
 
-                <label for="correoelectronico">Correo Electrónico</label> <!-- Textbox de tipo email para insertar nombre y apellido -->
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <label for="correoelectronico">Correo Electrónico</label> <!-- Textbox de tipo email para insertar correo electrónico -->
+                <input type="email" name="correoelectronico" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
-                <label for="telefono">Teléfono</label> <!-- Textbox de tipo telefono para insertar nombre y apellido -->
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+                <label for="telefono">Teléfono</label> <!-- Textbox de tipo tel para número de teléfono -->
+                <input type="tel" name="telefono" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea cols="63" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <textarea cols="63" rows="10" name="mensaje" id="mensaje" class="input-padron" required"></textarea>
 
                 <fieldset> <!--etiqueta fieldset para crear un campo con radio buttons-->
                     <legend>¿Como le gustaría que lo contactemos?</legend>
@@ -44,11 +44,13 @@
                 </fieldset>
 
                 <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades?</label> <!--Checkbox para recibir novedades-->
-                <input class="enviar" type="submit" value="Enviar Formulario"><!--Boton enviar-->
+                <button disabled class="enviar" type="submit">Enviar Formulario</button><!--Boton enviar-->
             </form>   
         </main>
         <footer> 
             <img src="../img/logoNegro.png" alt="Logo Julian Silva Nutricionista">
             <p class="copyright">&copy Copyright Julian Silva Nutricionista</p>
         </footer>
-    </html>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
